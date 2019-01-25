@@ -25,7 +25,7 @@
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
       }
-      #logo{
+      #main{
         font-size:72px;
         width: 400px;
         margin:auto;
@@ -45,12 +45,17 @@
         padding: 10px 2px 10px 0;
       }
       .right{
-        padding: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 2px;
       }
+      #logo{
+        display: inline;
+        max-width: 55px;
+        max-height: 55px;
+      }
+      
     </style>
   </head>
   <body>
-    <p id="logo" class="centered">
-      <span class="blue left">Dive</span><span class="blue center">In</span><span class="white right">AI</span> </p>
+    <p id="main" class="centered"><span class="blue left">Dive</span><span class="blue center">In</span><img id="logo" src="images/logo.png"><span class="blue right">AI</span></p>
   </body>
 </html>
